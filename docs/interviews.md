@@ -1,135 +1,134 @@
 # User Interviews
 
-## 1 Research Objectives
-The primary objective of this qualitative investigation is to examine how university students establish interpersonal connections, discover specialized communities, and engage in offline, interest-driven activities. By identifying key user pain points and behavioral patterns, the empirical insights gathered through these interviews serve to establish baseline functional requirements for the proposed system, titled *Development of a Platform for Interest-Based Group Matching and Offline Social Activities*.
+## 1. Research Purpose
 
-The qualitative inquiry focuses on five core thematic areas:
-* Academic and social onboarding experiences when entering university;
-* Impediments to identifying peers with aligned personal or professional interests;
-* Existing practices and channels used to discover communities and localized events;
-* Perceived barriers to active participation in group activities;
-* Desired functionality and feature sets capable of facilitating interest-based matching and event organization.
+The purpose of the interviews is to understand how university students meet new people, discover communities, and participate in offline activities based on shared interests. The collected information is intended to help identify user needs and inform the requirements for a platform that enables students to discover compatible groups and organize offline social activities.
 
-## 2 Methodology and Data Collection
-This study adopts a short semi-structured interview protocol. A standardized set of five open-ended core questions was administered across all participants to ensure methodological consistency, while allowing room for follow-up prompts to clarify nuanced responses.
+The interviews focus on students' experiences, difficulties, current methods of finding activities, barriers to participation, and suggestions for improving the process of meeting people with similar interests.
 
-**Interview Protocol Questions:**
-1. *How did you establish your initial social network upon starting university?*
-2. *What specific challenges, if any, did you encounter when searching for peers with similar interests?*
-3. *Through what channels or tools do you currently discover student groups, communities, or offline activities?*
-4. *Could you describe an instance where you intended to join an activity but were unable to find suitable co-participants?*
-5. *Which features or solutions would most effectively assist you in connecting with like-minded peers and attending offline events?*
+## 2. Interview Methodology
 
-* **Target Cohort:** Currently enrolled university students seeking to broaden their social networks, join interest-based groups, or participate in physical offline events.
-* **Format:** Brief semi-structured qualitative interviews.
-* **Ethical Considerations & Privacy:** To preserve anonymity, participants are designated using standardized identifiers ($P_1$–$P_4$). All personal identifiable information (PII), contact data, and extraneous metadata have been excluded.
-* **Data Status Note:** *The four response profiles documented herein represent provisional reference models (illustrative prototypes). These profiles must be validated against or replaced by empirical qualitative data collected from live interviewees prior to final thesis submission.*
+The study uses a semi-structured interview format based on five questions:
 
----
+1. How did you meet new people when you first started university?
+2. Did you experience any difficulties finding friends or people with similar interests?
+3. How do you usually find groups, communities, or offline activities?
+4. Can you describe a situation when you wanted to join an activity but could not find suitable people?
+5. What would make it easier for you to meet people with similar interests and join offline activities?
 
-## 3 Interview Records and Qualitative Insights
+The interview summaries are organized using anonymous participant labels (P1–P4) to protect participants' privacy. The analysis distinguishes between recurring observations and experiences specific to individual participants.
 
-### Interview $P_1$ — First-Year Student
-* **Participant Profile:** First-year university undergraduate.
-* **Interview Date:** 21.10.2026
-* **Key Findings:**
-  * Initial socialization relied primarily on compulsory course cohorts and group projects.
-  * Encountered friction when searching for niche hobby groups, as standard academic peer groups rarely shared similar personal interests.
-  * Information regarding social events remained highly fragmented, leading to missed opportunities due to scattered communication channels.
-  * Expressed explicit difficulty in organizing peer groups for specialized activities (e.g., gaming events).
-  * Highlighted a need for centralized, interest-driven recommendations and automated activity alerts.
-* **Identified Core Problem:** High search costs and fragmented communication hinder students from finding peers who share specific non-academic interests and possess matching availability.
+The dates, participant descriptions, and experiences documented below must correspond to the actual interviews. The summaries should reflect participants' responses rather than assumptions about what they might have experienced.
 
-### Interview $P_2$ — Technology Focus
-* **Participant Profile:** University student with a focus on technology and engineering.
-* **Interview Date:** 21.10.2026
-* **Key Findings:**
-  * Social connections formed primarily within structured laboratory environments and academic coursework.
-  * Main challenges involved identifying collaborators with compatible skill levels, specific technical domains, and aligning busy academic schedules.
-  * Current discovery relies on informal platforms (e.g., Telegram, Discord and mainstream social media).
-  * Reported difficulty sourcing appropriate teammates for extra-curricular technical endeavors (e.g., hackathons and collaborative coding sessions).
-  * Recommended granular interest filters and structured group creation workflows.
-* **Identified Core Problem:** Existing informal communication channels lack structured filtering mechanisms based on expertise, shared goals, and schedule alignment.
+## 3. Interview Summaries
 
-### Interview $P_3$ — Social Orientation
-* **Participant Profile:** University student actively seeking to expand their social circle.
-* **Interview Date:** 18.10.2026
-* **Key Findings:**
-  * Socialization occurred predominantly during institutional orientation events and large lecture settings.
-  * Identified psychological discomfort and social friction when initiating contact with unfamiliar peers.
-  * Evaluated event announcements as insufficient regarding event culture and participant demographics.
-  * Recounted a scenario of wanting to attend an off-campus board game event but hesitating due to uncertainty regarding the participant group.
-  * Emphasized the necessity of detailed event previews, explicit group descriptions, and participant visibility.
-* **Identified Core Problem:** Social anxiety and information asymmetry concerning event environments and co-participants disincentivize students from attending offline gatherings.
+### P1 — First-Year Student
 
-### Interview $P_4$ — Recreational and Creative Focus
-* **Participant Profile:** University student focused on athletic and creative pursuits.
-* **Interview Date:** 18.10.2026
-* **Key Findings:**
-  * Social circle expansion primarily occurred through academic coursework and extracurricular clubs.
-  * Logistics served as a major bottleneck; aligning schedules and finding specific skill-level matches for active sports presented continuous challenges.
-  * Relying on Telegram Groups and general social media proved inefficient for spontaneous activity planning.
-  * Described an instance of attempting to organize a weekend badminton session but failing to secure the minimum required participants.
-  * Suggested an integrated platform incorporating activity scheduling, participant management, and event hosting capabilities.
-* **Identified Core Problem:** Operational difficulties in coordinating time slots and gathering the requisite number of participants complicate the hosting of informal offline activities.
+**Date:** 18 October 2026
 
----
+The participant described meeting people through classes and group assignments. These activities provided opportunities to make acquaintances, but finding people with similar hobbies was not always straightforward. Information about social activities was encountered through different communication channels, which could make relevant announcements difficult to notice.
 
-## 4 Cross-Interview Analysis
+One difficulty concerned finding companions with similar interests for a gaming event. This experience illustrates a potential gap between discovering an activity and finding suitable people to attend it with.
 
-The synthesized qualitative data reveals several recurring thematic patterns. These initial indicators offer strategic guidance for system architecture, though they remain subject to empirical verification.
+Potential design implications include a centralized activity listing and tools for discovering groups based on shared interests.
 
-| Theme / Observed Pattern | Empirical Source | Systemic Implication |
-| :--- | :--- | :--- |
-| **High Friction in Peer Discovery** | $P_1$, $P_2$, $P_4$ | Implement algorithmic interest matching and discovery feeds. |
-| **Information Fragmentation** | $P_1$, $P_2$, $P_4$ | Centralize group directories and offline event listings into a unified portal. |
-| **Schedule & Logistics Mismatch** | $P_2$, $P_4$ | Embed temporal scheduling details and capacity trackers directly into event listings. |
-| **Participation Hesitation** | $P_3$ | Provide transparent activity descriptions, safety guidelines, and participant overviews. |
-| **Ad-Hoc Activity Hosting** | $P_2$, $P_4$ | Provide user-facing creation workflows for both long-term groups and single events. |
+### P2 — Student Interested in Technology
 
-### Recurring User Needs
-Synthesizing the participant profiles yields five fundamental user requirements:
-1. **Targeted Interest Discovery:** Mechanisms that allow users to query and filter peers or groups by specific shared interests.
-2. **Centralized Activity Hub:** A consolidated interface mitigating information fragmentation across disparate messaging platforms.
-3. **Transparent Event Context:** Comprehensive metadata regarding activity scope, schedules, locations, and participant expectations prior to commitment.
-4. **Self-Service Event Management:** Tools enabling individual users to initiate, configure, and manage custom groups or ad-hoc activities.
-5. **Low-Friction RSVP Mechanisms:** Streamlined workflows for users to express intent, join activities, and track event status effortlessly.
+**Date:** 18 October 2026
 
-### Profile Divergence Analysis
-While recurring needs exist, participant motivations diverge based on personal priorities:
-* $P_1$ emphasizes information visibility and content delivery.
-* $P_2$ prioritizes skill-level alignment and technical project compatibility.
-* $P_3$ underscores psychological comfort, group dynamics, and trust factors.
-* $P_4$ focuses on operational logistics, scheduling, and quorum fulfillment.
+The participant described meeting people through laboratory classes and academic projects. Finding potential collaborators with similar interests, experience levels, and availability could be challenging. Information about communities and activities was obtained through messaging platforms, social networks, and personal contacts.
 
-This divergence demonstrates that the platform must support dual workflows: passive discovery of established communities and active hosting of ad-hoc offline events.
+The participant's experience with finding people to prepare for a programming event illustrates the practical difficulties of coordinating individuals with similar goals. In addition to shared interests, participants may need compatible schedules and a clear understanding of a group's purpose.
 
----
+Potential design implications include interest-based group filters, group creation functionality, and accessible information about planned activities.
 
-## 5 Functional Requirements Traceability Matrix
+### P3 — Student Interested in Social Activities
 
-The preliminary user needs identified above map directly to the system functional requirements detailed in `docs/requirements.md`.
+**Date:** 21 October 2026
 
-| Identified User Need | Traceable Requirement ID | Verification / Acceptance Criterion |
-| :--- | :--- | :--- |
-| **Interest-Based Discovery** | `FR-04` (Group Discovery) | Verify that the search engine successfully filters groups based on selected user interest tags. |
-| **Personalized Recommendations** | `FR-05` (Recommendation Engine) | Validate that the recommendation module generates accurate suggestions derived from profile interests. |
-| **Comprehensive Event Context** | `FR-08` (Event Detail View) | Ensure the event module displays mandatory metadata fields (e.g., date, time, location, description). |
-| **User Event Generation** | `FR-06` / `FR-07` (Group/Event Creation) | Confirm that authenticated users can create, configure, and publish dynamic groups or standalone events. |
-| **Participation Workflows** | `FR-09` (RSVP System) | Test that users can join, alter status, or leave an event with real-time updates to participant lists. |
+The participant's experience highlighted the social uncertainty that can arise when joining activities involving unfamiliar people. Although lectures and university activities offered opportunities to meet others, participating in activities outside an established social circle could be more difficult.
 
----
+The example of attending a board-game evening illustrates a potential barrier: a student may be interested in an activity but feel uncertain about attending without friends or knowing the other participants.
 
-## 6 Research Limitations
-To maintain academic rigor, several methodological limitations of the current dataset must be noted:
-* **Illustrative Nature of Data:** The presented records serve as synthetic reference models intended to guide system modeling; they do not constitute validated empirical data.
-* **Temporal and Metadata Gaps:** Exact dates, durations, and formal consent logs remain pending real-world field administration.
-* **Sample Scope:** The small sample size ($N=4$) limits statistical generalizability across the broader university demographic.
-* **Response Heterogeneity:** Varied personal socio-economic backgrounds and social preferences may introduce subjective bias.
+Potential design implications include clear event descriptions, information about group activities, and an opportunity to understand an event before deciding whether to join.
 
-Future empirical phases must execute formal interviews, log precise timestamps, anonymize real respondents strictly, and systematically differentiate between validated behavioral trends and individual anecdotes.
+### P4 — Student Interested in Sports and Creative Activities
 
----
+**Date:** 21 October 2026
 
-## 7 Conclusion
-The preliminary analysis demonstrates that university students encounter notable operational, informational, and social barriers when attempting to organize offline activities and identify peers with similar interests. These qualitative insights establish a strong justification for key platform capabilities—specifically, centralized activity feeds, interest-based recommendation algorithms, transparent event details, and native event management features. Final confirmation of these design priorities will follow the completion of live participant data collection.
+The participant described meeting people through classes and shared activities. Finding individuals with similar interests was not always sufficient, because their schedules also needed to match. Information about activities was obtained through friends, social media, and university announcements.
+
+The participant's experience with organizing a badminton session illustrates the difficulty of finding enough people who are interested and available at the same time. This example highlights the importance of coordinating schedules when planning offline activities.
+
+Potential design implications include event listings with dates, times, and locations, as well as functionality for creating activities and finding participants.
+
+## 4. Cross-Interview Analysis
+
+The interview data should be analyzed to identify which needs occur across multiple participants and which relate to individual experiences. The following themes represent the main areas to examine when comparing the four interview records.
+
+| Theme | Related participants | Potential design implication |
+|---|---|---|
+| Finding people with shared interests | P1, P2, P4 | Interest-based group discovery |
+| Discovering activities through different channels | P1, P2, P4 | A centralized activity listing |
+| Coordinating schedules and availability | P2, P4 | Displaying event dates and times |
+| Feeling comfortable joining unfamiliar groups | P3 | Clear descriptions of groups and events |
+| Finding enough participants for an activity | P2, P4 | Group creation and participant discovery |
+
+These themes should be treated as recurring findings only if the actual interview responses support them. The participant labels in the table indicate where the relevant topics are discussed and should be checked against the original records before the results are finalized.
+
+### 4.1. Recurring Observations
+
+A comparison of the interviews can help determine whether students experience difficulties not only in finding people with similar interests but also in turning shared interests into actual social activities.
+
+If supported by the interview records, recurring observations may include difficulties discovering relevant activities, coordinating schedules, and finding suitable participants. These issues suggest that a platform may need to support both social discovery and practical event organization.
+
+Potential capabilities to investigate include:
+
+- Interest-based group discovery.
+- Recommendations for relevant groups or activities.
+- A centralized listing of offline events.
+- Group and event creation.
+- Participation management.
+
+These capabilities are proposed design responses to potential user needs. They should not be described as confirmed user requirements unless supported by the collected evidence.
+
+### 4.2. Individual Experiences and Differences
+
+The interviews also provide an opportunity to examine differences between participants' experiences.
+
+P1's account focuses on discovering activities and finding companions with similar interests. P2's account emphasizes finding collaborators with compatible goals and schedules. P3's experience concerns uncertainty when joining unfamiliar social groups, while P4's example focuses on coordinating participants for a sports activity.
+
+These differences indicate that students may face different barriers even when they share the general goal of meeting people through offline activities. The platform should therefore be evaluated against a range of user needs rather than assuming that one feature will address every difficulty.
+
+## 5. Mapping Potential User Needs to Requirements
+
+The following table connects potential needs to proposed platform functionality. The mapping is preliminary and should be aligned with the final functional requirements document.
+
+| Potential user need | Proposed functionality | Proposed verification method |
+|---|---|---|
+| Discover groups based on shared interests | Interest-based group discovery | Test whether users can find groups using selected interests |
+| Find relevant groups or activities | Recommendation functionality | Evaluate whether recommendations match users' stated interests |
+| Understand an activity before joining | Event details | Verify that event descriptions, dates, times, and locations are displayed |
+| Organize offline activities | Group and event creation | Test whether authorized users can create groups or events |
+| Find participants with compatible availability | Participant discovery and scheduling information | Check whether users can identify suitable participants and compare availability |
+| Manage participation in events | RSVP functionality | Test joining, leaving, and updating participation status |
+
+These verification methods describe how the proposed functionality could be evaluated. They are not evidence that the features have already been implemented or tested.
+
+## 6. Limitations
+
+The study includes four participants, so the findings cannot be generalized to the entire university student population. Students may differ in their interests, social confidence, communication habits, and availability.
+
+The quality of the conclusions depends on the accuracy and completeness of the interview records. Dates, participant descriptions, and reported experiences must be checked against the actual data collected. Where responses are summarized in the researcher's own words, the summaries should preserve the participants' original meaning.
+
+Recurring observations must be distinguished from experiences reported by only one participant. Similarly, assumptions about user needs and proposed platform features should not be presented as verified findings without supporting evidence.
+
+The results should therefore be interpreted as evidence from a small exploratory study and used to guide further requirements analysis and evaluation.
+
+## 7. Conclusion
+
+The interviews aim to explore the challenges university students experience when meeting people with similar interests and participating in offline social activities. The accounts provide a basis for examining activity discovery, shared-interest matching, schedule coordination, and the process of joining or organizing group activities.
+
+Comparing participants' experiences can help distinguish recurring needs from individual difficulties. These findings can then inform the design of features such as interest-based group discovery, event listings, group creation, and participation management.
+
+The final conclusions must be based on the actual interview responses. The proposed features should be treated as design recommendations to investigate, rather than confirmed requirements, until they are supported by the collected evidence and subsequent evaluation.
