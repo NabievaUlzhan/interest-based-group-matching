@@ -112,8 +112,6 @@ The stack is consistent: one typed API contract (OpenAPI) between React and Fast
 
 ## 7. References
 
-*Accessed 24 October 2026. Verify that links still work before final submission.*
-
 1. FastAPI documentation. https://fastapi.tiangolo.com
 2. Pydantic documentation. https://docs.pydantic.dev
 3. React documentation. https://react.dev
