@@ -71,7 +71,7 @@ The application stack is **preliminary**, documented in the [initial architectur
 | Team Member | Preliminary Responsibility |
 |---|---|
 | Arstanbek Fariza — Backend Developer | Database design, REST API, authentication, and group ranking |
-| Yerzhan Syndaly (Syndaly Yerzhan) — Frontend Developer | React/TypeScript user flows, responsive views, UI/UX design, interest selection, group/event screens, and API integration |
+| Yerzhan Syndaly — Frontend Developer | React/TypeScript user flows, responsive views, UI/UX design, interest selection, group/event screens, and API integration |
 | Nabieva Ulzhan — Full-stack Developer / QA | Event CRUD and RSVP workflow, integration, test planning, automation, and execution |
 
 Interviews, literature analysis, diagrams, documentation, reviews, and supervisor meetings are shared responsibilities. Individual responsibilities follow the preliminary proposal and may be adjusted as the scope and requirements become clearer.
@@ -86,9 +86,8 @@ Interviews, literature analysis, diagrams, documentation, reviews, and superviso
 | --- | --- |
 | Completed and merged documentation | Existing project README, initial architecture description, and four Mermaid diagrams with SVG/PNG exports are on `main`. The design remains preliminary. |
 | Existing UI design | The Figma Design and Prototype links below open the existing UX file. It demonstrates preset fictional flows, not live authentication, persistent data, a working recommendation engine, or real event registration. |
-| Reviewed, open, and unmerged | Existing-systems comparison (#1), user flows (#2), proposal (#4), technology comparison (#5), prototype documentation/exports (#8), and interview documentation (#9) have approving GitHub reviews but are not on this `main` snapshot. See the documentation index. |
-| In review and unmerged | Risks and milestones are in PR #6, with review comments to resolve. Proposed dates still require supervisor approval. The evaluation plan is in open PR #10, with test execution pending implementation. |
-| Branch draft, unmerged | Requirements exist on `IBS-3-requirements`, with no PR found at this review. The exact path is indexed below. |
+| Reviewed, open, and unmerged | Existing-systems comparison (#1), user flows (#2), proposal (#4), technology comparison (#5), risks/milestones (#6), prototype documentation/exports (#8), and interview documentation (#9) have approving GitHub reviews but are not on this `main` snapshot. See the documentation index. |
+| In review and unmerged | The evaluation plan is in open PR #10, with test execution pending implementation. Requirements are in open PR #12. Neither PR has a submitted review at this check. |
 | Proposed / not implemented | Frontend, backend, database migrations, recommendation implementation, executable tests, deployment, and measured evaluation results are not present on `main`. |
 
 Interview documentation remains a review artifact; this README does not independently verify interview records or claim validated research findings, usability results, or improved social outcomes.
@@ -125,9 +124,9 @@ These links open actual branch files or PRs. They do not imply that the files ex
 | Existing-systems comparison | [docs/existing-systems.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-10-existing-systems/docs/existing-systems.md) | [PR #1](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/1): approved GitHub review, unmerged |
 | User flows and UI requirements | [docs/user-flows.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-13-user-flows/docs/user-flows.md) | [PR #2](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/2): approved GitHub reviews, unmerged; preliminary flows |
 | Technology comparison | [docs/technology-comparison.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-7-technology-comparison/docs/technology-comparison.md) | [PR #5](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/5): approved GitHub review, unmerged |
-| Risks and milestones | [docs/project-management.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-5-project-risks/docs/project-management.md) | [PR #6](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/6): review comments outstanding, unmerged |
+| Risks and milestones | [docs/project-management.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-5-project-risks/docs/project-management.md) | [PR #6](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/6): approved GitHub review, unmerged; proposed dates require supervisor approval; resolution of earlier scope/tracking comments has not been independently confirmed |
 | User interviews | [docs/interviews.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-1-user-interviews/docs/interviews.md) | [PR #9](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/9): approved GitHub review, unmerged; original interview records require verification |
-| Functional and non-functional requirements | [docs/requieremenrs.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-3-requirements/docs/requieremenrs.md) | Branch draft on `IBS-3-requirements`; filename spelling is as stored; no PR found |
+| Functional and non-functional requirements | [docs/requieremenrs.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-3-requirements/docs/requieremenrs.md) | [PR #12](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/12): open, unmerged; filename spelling is as stored |
 | Verification and evaluation plan | [docs/evaluation-plan.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-4-evaluation-plan/docs/evaluation-plan.md) | [PR #10](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/10): open, unmerged; test execution pending implementation |
 | UX prototype documentation and screen exports | [prototype/README.md](https://github.com/NabievaUlzhan/interest-based-group-matching/blob/IBS-11-figma-prototype/prototype/README.md) | [PR #8](https://github.com/NabievaUlzhan/interest-based-group-matching/pull/8): approved GitHub review, unmerged |
 
