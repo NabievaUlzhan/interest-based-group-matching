@@ -76,6 +76,14 @@ Current activities include:
 
 Project documentation will be developed progressively as the project advances. It may include the project proposal, user research, literature review, requirements specification, system design, UI/UX prototype, and testing and evaluation results.
 
+### UX Prototype (IBS-11)
+
+The preliminary CommonGround prototype documents the main account, interest selection, group discovery, and offline event journeys.
+
+- [Editable Figma Design](https://www.figma.com/design/rZJZOEB9oiLOJdmFGq1ZS6/Interest-Based-Social-Platform-%E2%80%94-UX-Prototype)
+- [Clickable Figma Prototype](https://www.figma.com/proto/rZJZOEB9oiLOJdmFGq1ZS6/Interest-Based-Social-Platform-%E2%80%94-UX-Prototype?node-id=3-186&starting-point-node-id=3%3A186&scaling=scale-down&content-scaling=fixed)
+- [Prototype UX documentation, screen inventory, walkthroughs, and desktop exports](prototype/README.md)
+
 ## Project Management
 
 GitHub is used for source code management, documentation, and team collaboration. YouTrack will be used to manage tasks and monitor project progress.
