@@ -160,8 +160,15 @@ GitHub is used for source code management, documentation, and team collaboration
 - [GitHub pull requests](https://github.com/NabievaUlzhan/interest-based-group-matching/pulls)
 - [YouTrack — Interest-Based Social Platform project issues](https://interest-based-group-matching.youtrack.cloud/issues/IBS)
 - [IBS-12 — S3. Write Project README and Project Documentation Overview](https://interest-based-group-matching.youtrack.cloud/issue/IBS-12)
+- Branching workflow: [docs/branching-workflow.md](docs/branching-workflow.md)
 
-Task or review status does not by itself establish that a deliverable has been merged, implemented, or evaluated. Update this overview and its links when the relevant work reaches `main`.
+## Repository Structure
+| Folder | Content |
+| --- | --- |
+| `docs/` | Project documentation |
+| `diagrams/` | Diagram sources and exports |
+| `prototype/` | Prototype source code |
+| `tests/` | Tests and test documentation |
 
 ## Academic Information
 
