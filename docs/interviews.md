@@ -66,7 +66,7 @@ The participant described an interest in attending a board-game evening but foun
 
 ## 4. Cross-Interview Analysis
 
-The interview records can be compared to distinguish needs that recur across participants from experiences specific to individuals. The table below summarizes the themes identified in the prepared interview summaries and their potential implications for the platform. These themes must be confirmed against the actual interview records before being reported as empirical findings.
+The interview records can be compared to distinguish needs that recur across participants from experiences specific to individuals. The table below summarizes the themes identified in the prepared interview summaries and their potential implications for the platform.
 
 | Theme | Participants to compare | Potential design implication |
 |---|---|---|
@@ -127,13 +127,11 @@ The interview findings and design recommendations should be classified as follow
 
 A requirement may be relevant to the project even if no participant explicitly requested it. In such cases, its justification should be documented separately, for example through project objectives, technical considerations, or the literature review.
 
-The final mapping should identify which requirements are supported by interview evidence and which remain assumptions or design decisions.
-
 ## 6. Limitations
 
 The study is exploratory and focuses on a small number of university students. Four participants, if confirmed, cannot represent the experiences of the entire student population.
 
-The reliability of the findings depends on the accuracy and completeness of the interview records. Dates, participant descriptions, and reported experiences must correspond to the actual data collected. Summaries written in the researcher's own words are acceptable when they preserve the participants' intended meaning.
+The reliability of the findings depends on the accuracy and completeness of the interview records. Summaries written in the researcher's own words are acceptable when they preserve the participants' intended meaning.
 
 Recurring observations must be distinguished from individual experiences. A problem reported by one participant should not be presented as a general student need without additional evidence.
 
@@ -146,5 +144,3 @@ These limitations should be considered when interpreting the results and transla
 The interviews explore how university students meet people with similar interests, discover offline activities, coordinate schedules, and participate in social groups. The analysis considers both recurring challenges and individual experiences that may affect students' willingness or ability to join activities.
 
 The findings can inform the evaluation of existing functional requirements, including group discovery (FR-05), group recommendations (FR-06), event information (FR-07), event creation (FR-08), event participation (FR-09), and registration management (FR-10).
-
-The final conclusions must be based on the actual responses collected from participants. Recurring needs should be reported only when supported by multiple interviews, while individual experiences should remain attributed to the relevant anonymous participant. Proposed platform features should be treated as design recommendations unless the collected evidence supports them as validated user needs.
