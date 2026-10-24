@@ -1,0 +1,50 @@
+erDiagram
+    USERS ||--o{ USER_INTERESTS : "selects"
+    INTERESTS ||--o{ USER_INTERESTS : "chosen by"
+    GROUPS ||--o{ GROUP_INTERESTS : "tagged with"
+    INTERESTS ||--o{ GROUP_INTERESTS : "describes"
+    USERS ||--o{ GROUPS : "owns"
+    GROUPS ||--o{ EVENTS : "hosts"
+    USERS ||--o{ EVENTS : "organizes"
+    USERS ||--o{ RSVPS : "registers"
+    EVENTS ||--o{ RSVPS : "has"
+
+    USERS {
+        int id PK
+        string email UK
+        string password_hash
+        string display_name
+    }
+    INTERESTS {
+        int id PK
+        string name UK
+    }
+    USER_INTERESTS {
+        int user_id PK, FK
+        int interest_id PK, FK
+    }
+    GROUPS {
+        int id PK
+        string title
+        string description
+        int owner_id FK
+    }
+    GROUP_INTERESTS {
+        int group_id PK, FK
+        int interest_id PK, FK
+    }
+    EVENTS {
+        int id PK
+        int group_id FK
+        int organizer_id FK
+        string title
+        datetime start_at
+        string location
+        int capacity
+    }
+    RSVPS {
+        int user_id PK, FK
+        int event_id PK, FK
+        string status
+        datetime created_at
+    }

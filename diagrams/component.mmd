@@ -1,0 +1,26 @@
+flowchart TB
+    client["React + TypeScript web client<br/>(Vite)<br/>Sign up / Log in, Profile, Interest Selection,<br/>Group Discovery, Events Listing, Event Detail / RSVP"]
+
+    subgraph backend ["FastAPI backend (REST API, Pydantic validation)"]
+        auth["Auth service<br/>JWT, Argon2 password hashing"]
+        profile["Profile / Interests service"]
+        reco["Group recommendation service<br/>TF-IDF + cosine, Jaccard baseline"]
+        events["Event / RSVP service<br/>capacity check"]
+        dal["Data-access layer<br/>SQLAlchemy"]
+    end
+
+    db[("PostgreSQL")]
+    migr["Alembic<br/>migrations"]
+
+    client -- "HTTPS REST (JSON), Bearer token" --> auth
+    client -- "HTTPS REST (JSON)" --> profile
+    client -- "HTTPS REST (JSON)" --> reco
+    client -- "HTTPS REST (JSON)" --> events
+
+    auth --> dal
+    profile --> dal
+    reco --> dal
+    events --> dal
+    reco -. "reads interest tags" .-> profile
+    dal --> db
+    migr --> db
