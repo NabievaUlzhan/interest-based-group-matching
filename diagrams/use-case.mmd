@@ -5,36 +5,37 @@ flowchart LR
     maintainer(["System Maintainer"])
 
     subgraph sys ["Interest-Based Social Platform"]
-        uc1(["View public groups and events"])
-        uc2(["Register (FR-01)"])
-        uc3(["Log in / log out (FR-02)"])
-        uc4(["Edit profile (FR-03)"])
-        uc5(["Select interests (FR-04)"])
-        uc6(["Browse interest groups (FR-05)"])
-        uc7(["View recommended groups (FR-06, FR-11)"])
-        uc8(["View event information (FR-07)"])
-        uc9(["Join / leave event (FR-09)"])
-        uc10(["View my registrations (FR-10)"])
-        uc11(["Create / update own event (FR-08)"])
-        uc12(["View RSVP count"])
+        uc1(["Browse groups (FR-05)"])
+        uc2(["Search and filter groups (FR-11)"])
+        uc3(["View event details (FR-07)"])
+        uc4(["Register an account (FR-01)"])
+        uc5(["Log in / log out (FR-02)"])
+        uc6(["Edit profile (FR-03)"])
+        uc7(["Select interests (FR-04)"])
+        uc8(["View suggested groups (FR-06)"])
+        uc9(["Join a group (FR-12)"])
+        uc10(["Register for / cancel event (FR-09)"])
+        uc11(["View my event registrations (FR-10)"])
+        uc12(["Create / update OWN event (FR-08)<br/>ownership checked on the backend"])
         uc13(["Manage configuration and logs"])
     end
 
     visitor --- uc1
     visitor --- uc2
     visitor --- uc3
+    visitor --- uc4
+    visitor --- uc5
 
-    user --- uc3
-    user --- uc4
     user --- uc5
     user --- uc6
     user --- uc7
     user --- uc8
     user --- uc9
     user --- uc10
+    user --- uc11
+    user -. "also browses, searches,<br/>and views events" .- uc1
 
-    organizer --- uc11
     organizer --- uc12
-    organizer -. "also performs all<br/>Registered User use cases" .- user
+    organizer -. "is also a<br/>Registered User" .- user
 
     maintainer --- uc13

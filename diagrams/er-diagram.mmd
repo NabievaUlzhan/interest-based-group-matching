@@ -4,7 +4,9 @@ erDiagram
     GROUPS ||--o{ GROUP_INTERESTS : "tagged with"
     INTERESTS ||--o{ GROUP_INTERESTS : "describes"
     USERS ||--o{ GROUPS : "owns"
-    GROUPS ||--o{ EVENTS : "hosts"
+    USERS ||--o{ GROUP_MEMBERS : "joins"
+    GROUPS ||--o{ GROUP_MEMBERS : "has members"
+    GROUPS |o--o{ EVENTS : "may host"
     USERS ||--o{ EVENTS : "organizes"
     USERS ||--o{ RSVPS : "registers"
     EVENTS ||--o{ RSVPS : "has"
@@ -33,18 +35,26 @@ erDiagram
         int group_id PK, FK
         int interest_id PK, FK
     }
+    GROUP_MEMBERS {
+        int user_id PK, FK
+        int group_id PK, FK
+        string status "joined or pending"
+        datetime joined_at
+    }
     EVENTS {
         int id PK
-        int group_id FK
-        int organizer_id FK
+        int group_id FK "optional, NULL = standalone event"
+        int organizer_id FK "only this user may edit"
         string title
-        datetime start_at
+        string description
+        datetime start_at "with time zone"
         string location
-        int capacity
+        int capacity "optional, greater than 0"
     }
     RSVPS {
         int user_id PK, FK
         int event_id PK, FK
-        string status
+        string status "registered or cancelled"
         datetime created_at
+        datetime cancelled_at "set only if cancelled"
     }
