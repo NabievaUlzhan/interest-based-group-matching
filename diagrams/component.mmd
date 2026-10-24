@@ -1,0 +1,33 @@
+flowchart TB
+    client["React + TypeScript web client (Vite)<br/>Sign up / Log in, Profile, Interest Selection,<br/>Group Discovery, Events Listing, Event Detail / RSVP"]
+
+    subgraph backend ["FastAPI backend (REST API, Pydantic validation)"]
+        auth["Auth service<br/>JWT, Argon2 password hashing"]
+        profile["Profile / Interests service"]
+        groups["Group service<br/>browse, search/filter, join"]
+        reco["Group suggestion service<br/>TF-IDF + cosine, Jaccard baseline"]
+        events["Event / RSVP service<br/>create/update own events, register/cancel,<br/>capacity check"]
+        authz["Access control<br/>token check, role check,<br/>ownership check (organizer_id)"]
+        dal["Data-access layer<br/>SQLAlchemy"]
+    end
+
+    db[("PostgreSQL")]
+    migr["Alembic<br/>migrations"]
+
+    client -- "HTTPS REST (JSON), Bearer token" --> auth
+    client -- "HTTPS REST (JSON)" --> profile
+    client -- "HTTPS REST (JSON)" --> groups
+    client -- "HTTPS REST (JSON)" --> reco
+    client -- "HTTPS REST (JSON)" --> events
+
+    profile --> authz
+    groups --> authz
+    events --> authz
+    auth --> dal
+    profile --> dal
+    groups --> dal
+    reco --> dal
+    events --> dal
+    authz -. "reads user and event owner" .-> dal
+    dal --> db
+    migr --> db

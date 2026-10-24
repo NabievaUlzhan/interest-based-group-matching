@@ -1,0 +1,21 @@
+flowchart LR
+    visitor(["Visitor"])
+    user(["Registered User"])
+    organizer(["Event Organizer<br/>(a Registered User)"])
+    maintainer(["System Maintainer"])
+
+    subgraph boundary [" "]
+        system["Interest-Based Social Platform<br/>(web application + REST API)"]
+    end
+
+    db[("PostgreSQL<br/>database")]
+    notif["External notification provider<br/>(out of MVP scope)"]
+
+    visitor -- "browse and search public groups,<br/>view events, register, log in" --> system
+    user -- "edit profile and interests,<br/>get suggestions, join groups,<br/>register for events" --> system
+    organizer -- "create and update<br/>own events only" --> system
+    maintainer -- "configuration and<br/>operational logs" --> system
+    system -- "reads / writes<br/>system records" --> db
+    system -. "not in MVP" .-> notif
+
+    style notif stroke-dasharray: 5 5
