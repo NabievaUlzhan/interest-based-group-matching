@@ -144,6 +144,14 @@ The file is titled **Interest-Based Social Platform — UX Prototype**, with **C
 
 There is no runnable application code, dependency manifest, or executable test suite on this `main` snapshot. **Setup, execution, and testing instructions will be added after implementation**, when the actual prerequisites, configuration, commands, and test environment can be verified. Use the documentation and Figma links above to review the current project artifacts.
 
+### UX Prototype (IBS-11)
+
+The preliminary CommonGround prototype documents the main account, interest selection, group discovery, and offline event journeys.
+
+- [Editable Figma Design](https://www.figma.com/design/rZJZOEB9oiLOJdmFGq1ZS6/Interest-Based-Social-Platform-%E2%80%94-UX-Prototype)
+- [Clickable Figma Prototype](https://www.figma.com/proto/rZJZOEB9oiLOJdmFGq1ZS6/Interest-Based-Social-Platform-%E2%80%94-UX-Prototype?node-id=3-186&starting-point-node-id=3%3A186&scaling=scale-down&content-scaling=fixed)
+- [Prototype UX documentation, screen inventory, walkthroughs, and desktop exports](prototype/README.md)
+
 ## Project Management
 
 GitHub is used for source code management, documentation, and team collaboration. YouTrack is used to manage tasks and monitor project progress.
