@@ -80,7 +80,16 @@ Project documentation will be developed progressively as the project advances. I
 
 GitHub is used for source code management, documentation, and team collaboration. YouTrack will be used to manage tasks and monitor project progress.
 
-The YouTrack project link will be added once the project is set up.
+- YouTrack project: https://interest-based-group-matching.youtrack.cloud
+- Branching workflow: [docs/branching-workflow.md](docs/branching-workflow.md)
+
+## Repository Structure
+| Folder | Content |
+| --- | --- |
+| `docs/` | Project documentation |
+| `diagrams/` | Diagram sources and exports |
+| `prototype/` | Prototype source code |
+| `tests/` | Tests and test documentation |
 
 ## Academic Information
 
